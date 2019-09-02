@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://assets/bgfruitninja.jpg" type="Texture" id=1]
+[ext_resource path="res://scenes/pear.tscn" type="PackedScene" id=2]
+
+[node name="GameNode" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+
+transform/scale = Vector2( 0.8, 0.6 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Pear" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 640, 800 )
+
+
